@@ -23,7 +23,8 @@ body{
     grid-area: footer;
 }
 .btn{
-    background: #FFE13E;
+    background: #FF581E;
+    color: #fff
 }
 section{
     margin: 0px auto;
@@ -33,7 +34,7 @@ section{
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-rows: 60px 150px 100px auto 60px;
-    grid-template-columns: 10vw auto 10vw;
+    grid-template-columns: 25vw auto 25vw;
     grid-template-areas:
     "nav nav nav"
     ". header ."
@@ -50,11 +51,12 @@ div{
     background: transparent;
 }
 .amb-text{
-    margin-left: 10px;
-    margin-top: 100px;
+    margin-left: 18px;
+    margin: 100px auto;
+    width: 90%;
 }
 .amb-name{
-    margin-left: 30px;
+    margin-left: 48px;
     color: white;
     font-weight: bold;
 }
@@ -62,4 +64,9 @@ div{
     background: white;
     margin-top: -120px;
     z-index: 5;
+}
+.profile-img{
+    width:auto;
+    max-width:100%;
+    border-radius: 50%;
 }
