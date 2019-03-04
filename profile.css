@@ -22,6 +22,9 @@ body{
 .item-5{
     grid-area: footer;
 }
+.btn{
+    background: #FFE13E;
+}
 section{
     margin: 0px auto;
     height: 100vh;
@@ -30,13 +33,18 @@ section{
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-rows: 60px 150px 100px auto 60px;
-    grid-template-columns: 10vw 200px 200px auto 10vw;
+    grid-template-columns: 10vw auto 10vw;
     grid-template-areas:
-    "nav nav nav nav nav"
-    ". header header . ."
-    ". img . . ."
-    ". main main . ."
-    "footer footer footer footer footer"
+    "nav nav nav"
+    ". header ."
+    ". img . "
+    ". main ."
+    "footer footer footer"
+}
+@media(max-width:600px){
+    section{
+        grid-template-columns: 0px auto 0px;
+    }
 }
 div{
     background: transparent;
