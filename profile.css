@@ -1,3 +1,7 @@
+:root{
+    --dayColor:red;
+    --nightColor:rgb(6, 9, 51);
+}
 body{
     min-height: 100vh;
     width: calc(100vw - 150px);
@@ -42,7 +46,7 @@ section{
     ". main ."
     "footer footer footer"
 }
-@media(max-width:600px){
+@media(max-width:650px){
     section{
         grid-template-columns: 0px auto 0px;
     }
